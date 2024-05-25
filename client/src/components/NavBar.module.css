@@ -1,14 +1,53 @@
 .navBarDiv {
+    /* flex: 1; */
     display: flex;
-    justify-content: space-evenly;
+    width: 75%;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+    align-items: center;
     text-decoration: none;
+}
+
+.navWrap {
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 20px;
+    display: flex;
+}
+
+.navBarLink, .navBarLinkActive {
+    height: 50px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    text-decoration: none !important;
+    color: black;
+    font-size: 1.9rem;
+    padding: 0 1rem;
+}
+
+.navBarLink:hover {
+    color: black;
+}
+
+.navBarLinkActive:hover {
+    color: white;
+}
+
+.navBarLinkActive {
+    color: white;
+    margin-top: -0.25rem;
+    background: black;
+    border-radius: 5px;
 }
 
 .dropdownToggle {
     background: white !important;
     color: black !important;
     border: none;
-    text-decoration: underline;
+    text-decoration: none;
+    margin: -6px 30px auto 30px;
     font-size: 1.9rem;
 }
 
@@ -16,7 +55,7 @@
     background: white !important;
     color: black !important;
     border: none;
-    text-decoration: underline;
+    text-decoration: none;
     font-size: 1.9rem;
 }
 
@@ -29,4 +68,6 @@
 .dropdownLink {
     color: black;
     text-decoration: none;
+    font-size: 1.5rem;
+    text-align: left !important;
 }

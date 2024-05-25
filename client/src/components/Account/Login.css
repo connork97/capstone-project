@@ -1,0 +1,279 @@
+
+.loggedInDiv {
+    margin-top: 3rem;
+}
+
+.loggedInH3 {
+    margin: 2rem auto 3rem auto;
+}
+
+.logoutButton {
+    width: 10rem;
+    height: 3rem;
+}
+
+.loginDiv {
+    margin: auto auto 2rem auto;
+    width: 42.5vw;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+.loginForm {
+    margin: auto;
+    width: 95%;
+    height: 100%;
+}
+.admin-form-card {
+    width: 100%;
+    max-width: 380px;
+    padding: 40px;
+    border-radius: 12px;
+    background-color: #fff;
+    color: #e7ecf0;
+}
+.w-users-userloginformwrapper {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #1d1d1d;
+    background-image: radial-gradient(circle farthest-corner at 100% 100%, rgba(122, 167, 255, 0.32), transparent 44%), radial-gradient(circle farthest-corner at 0% 100%, rgba(255, 1, 1, 0.15), transparent 32%);
+}
+input.w-button {
+    -webkit-appearance: button;
+}
+
+@media screen and (max-width: 991px) {
+    .button {
+        position: relative;
+    }
+}
+.button {
+    margin-bottom: 8px;
+    padding: 8px 28px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    border-radius: 9px;
+    background-color: #1d1d1d;
+    box-shadow: 0 2px 0 0 rgba(32, 32, 32, 0.05);
+    -webkit-transition: box-shadow 200ms ease, border-color 200ms ease, color 200ms ease, background-color 200ms ease, -webkit-transform 200ms ease;
+    transition: box-shadow 200ms ease, border-color 200ms ease, color 200ms ease, background-color 200ms ease, -webkit-transform 200ms ease;
+    transition: box-shadow 200ms ease, transform 200ms ease, border-color 200ms ease, color 200ms ease, background-color 200ms ease;
+    transition: box-shadow 200ms ease, transform 200ms ease, border-color 200ms ease, color 200ms ease, background-color 200ms ease, -webkit-transform 200ms ease;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: center;
+}
+.w-users-userformbutton {
+    width: 100%;
+    text-align: center;
+}
+.w-button {
+    display: inline-block;
+    padding: 9px 15px;
+    background-color: #1d1d1d;
+    color: white;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0;
+}
+input {
+    line-height: normal;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+input[type="submit" i] {
+    appearance: auto;
+    user-select: none;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    color: buttontext;
+    white-space: pre;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+form {
+    display: block;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+}
+
+.full-page-wrapper {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    max-width: none;
+    padding: 24px 12px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* background-color: #1d1d1d; */
+    /* background-image: radial-gradient(circle farthest-corner at 100% 100%, rgba(122, 167, 255, 0.32), transparent 44%), radial-gradient(circle farthest-corner at 0% 100%, rgba(255, 1, 1, 0.15), transparent 32%); */
+    color: #fff;
+}
+.form-error {
+    padding: 16px;
+    border-radius: 6px;
+    background-color: #e7ecf0;
+    color: #e7ecf0;
+    font-size: 14px;
+    line-height: 18px;
+}
+.w-users-userformerrorstate {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.w-form-fail {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffdede;
+}
+.below-card-link {
+    display: inline-block;
+    margin-top: 24px;
+    color: #99a4af;
+    font-size: 14px;
+}
+body {
+    margin: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.text-field {
+    height: 44px;
+    min-width: 120px;
+    margin-bottom: 16px;
+    padding: 19px 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e7ecf0;
+    border-radius: 9px;
+    background-color: #f5f6f7;
+    -webkit-transition: border-color 200ms ease;
+    transition: border-color 200ms ease;
+    font-size: 15px;
+    line-height: 1.4em;
+}
+
+.w-input, .w-select {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+input {
+    line-height: normal;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+input[type="email" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+user agent stylesheet
+input {
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+a {
+    -webkit-transition: color 200ms ease;
+    transition: color 200ms ease;
+    color: #e7ecf0;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
