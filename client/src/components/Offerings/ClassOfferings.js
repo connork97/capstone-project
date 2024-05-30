@@ -16,8 +16,8 @@ const ClassOfferings = () => {
     const renderAllEvents = allEvents.map((event) => {
         return (
             <Accordion.Item className={styles.accordionItem} eventKey={event.id} key={event.id}>
-                <Accordion.Header>{event.name}</Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Header className={styles.accordionHeader}>{event.name}</Accordion.Header>
+                <Accordion.Body className={styles.accordionBody}>
                     Price: ${event.price}
                     <br></br><br></br>
                     Description: {event.description}
@@ -28,15 +28,19 @@ const ClassOfferings = () => {
 
     return (
         <>
-        <h1 className={styles.offeringsH1}>Classes</h1>
-        <div className={styles.classOfferingsDiv}>
-            <Button className={styles.calendarRedirectButton} onClick={() => history.push({pathname:'/calendar'})}>Go to Calendar</Button>
-            <Accordion className={styles.accordion}>
-                {renderAllEvents}
-            </Accordion>
+        <div className={styles.classOfferingsBackground}></div>
+        <div className={styles.classOfferingsOverlayDiv}></div>
+        <div className={styles.classOfferingsWrapper}>
+            <h1 className={styles.offeringsH1}>Classes</h1>
+            <div className={styles.classOfferingsDiv}>
+                <Accordion className={styles.accordion}>
+                    {renderAllEvents}
+                </Accordion>
+                <Button className={styles.calendarRedirectButton} onClick={() => history.push({pathname:'/calendar'})}>Go to Calendar</Button>
+            </div>
         </div>
         </>
-    )
-}
+    );
+};
 
-export default ClassOfferings
+export default ClassOfferings;

@@ -3,12 +3,19 @@
 .mainDiv {
     position: relative;
     text-align: center;
-    margin-top: 10vh;
     z-index: 10;
 }
 
 .loggedInDiv {
     margin-top: 3rem;
+}
+
+.loggedInH1 {
+    width: 25vw;
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+
 }
 
 .loggedInH3 {

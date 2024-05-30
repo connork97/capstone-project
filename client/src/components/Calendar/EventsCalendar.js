@@ -107,6 +107,7 @@ const EventsCalendar = () => {
 
   return (
     <div>
+      <div className={styles.calendarBackground}></div>
       {Object.keys(clickedSession).length > 0 ? 
       <EventDetailsModal
         clickedSession={clickedSession}
@@ -127,7 +128,7 @@ const EventsCalendar = () => {
         setShowAdminModal={setShowAdminModal}
       />
       : null}
-      <h1 className={styles.calendarH1}>Calendar</h1>
+      {/* <h1 className={styles.calendarH1}>Calendar</h1> */}
         <Calendar
           localizer={localizer}
           defaultDate={new Date()}

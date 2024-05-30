@@ -72,7 +72,7 @@ const Login = () => {
         <div className={styles.mainDiv}>
             {Object.keys(currentUser).length > 0 ?
             <div className='loggedInDiv'>
-                <h1>Hi {currentUser.first_name}, thanks for logging in!</h1>
+                <h1 className={styles.loggedInH1}>Hi {currentUser.first_name}, thanks for logging in!</h1>
                 <h3 className='loggedInH3'>To view or edit your profile information, <Link to="/profile">click here</Link>.</h3>
                 <Button className='logoutButton' onClick={() => handleLogout()}>Logout</Button>
             </div>
@@ -90,7 +90,7 @@ const Login = () => {
 //     </form>
     // <div style={{display: 'none'}} data-wf-user-form-error="true" class="w-users-userformerrorstate form-error w-form-fail"><div class="user-form-error-msg" wf-login-form-general-error-error="We're having trouble logging you in. Please try again, or contact us if you continue to have problems." wf-login-form-invalid-email_or_password-error="Invalid email or password. Please try again.">We're having trouble logging you in. Please try again, or contact us if you continue to have problems.</div></div></div><a href="/reset-password" class="below-card-link">Forgot your password?</a></div>            // 
             <>
-                <h1>Login Here:</h1>
+                <h1 className={styles.loggedInH1}>Login Here:</h1>
                 <div className={styles.loginDiv}>
                     <br></br>
                     <Form className={styles.loginForm} onSubmit={handleUserLogin}>

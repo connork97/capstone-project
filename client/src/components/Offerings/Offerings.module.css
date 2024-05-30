@@ -1,31 +1,73 @@
-.offeringsWrapperDiv {
+.offeringsWrapperDiv, .classOfferingsBackground {
     position: absolute;
     top: 0;
-    height: 100vh;
-    width: 100vw;
-    background-image: url('https://mesarim.com/missionvalley/wp-content/uploads/sites/5/2019/02/MVHome-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
 }
 
-.offeringsOverlayDiv {
-    position: absolute;
-    height: 100vh;
+.offeringsWrapperDiv {
     width: 100vw;
-    background: rgba(0, 0, 0, 0.4); /* Black with 50% transparency */
-    top: 0;
-    z-index: 2;
-
+    height: 100vh;
+    background-image: url('https://mesarim.com/missionvalley/wp-content/uploads/sites/5/2019/02/MVHome-1.jpg');
 }
 
-.calendarRedirectButton {
-    margin: 20px 25px;
+.classOfferingsBackground {
+    position: absolute;
+    top: -50vh;
+    left: -2.5vw;
+    height: 250vh;
+    width: 130vw;
+    background-image: url('../../images/climbing_instructor_with_students_zoomed_out.png');
+}
+
+.offeringsOverlayDiv, .classOfferingsOverlayDiv {
+    position: absolute;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.35); /* Black with 50% transparency */
+    top: 0;
+    z-index: 2;
+}
+
+.offeringsOverlayDiv {
+    height: 100vh;
+}
+
+.classOfferingsOverlayDiv {
+    height: 200vh;
+}
+
+.offeringsBackupOverlay {
+    position: absolute;
+    top: 100vh;
+    height: 50vh;
+    width: 100vw;
+    /* background: rgba(0, 0, 0, 0.35); */
+    background: linear-gradient(
+  to bottom,
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.3)
+
+  /* rgba(0, 0, 0, 0) */
+);
+}
+
+.calendarRedirectButton, .calendarRedirectButton:hover {
+    /* margin: 20px 25px; */
+    /* margin-left: 7.5vw; */
+    /* margin-right: -7.5vw; */
+    margin: 5vh auto;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 25vw;
+    font-size: 36px;
 }
 
 .accordion {
     margin: auto;
-    width: 75vw;
+    width: 50vw;
     text-align: left;
 }
 
@@ -34,17 +76,28 @@
     border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
 }
 
+/* .accordionHeader, .accordionBody {
+    background: rgba(0, 0, 0, 0.1);
+} */
+
 .offeringsH1 {
     position: relative;
     margin: auto;
     margin-top: 15vh;
     color: white;
-    width: 40vw;
+    width: 25vw;
     z-index: 9999;
 }
 
+.classOfferingsWrapper {
+    position: relative;
+    z-index: 5;
+    margin: auto;
+    text-align: center;
+}
+
 .classOfferingsDiv {
-    display: flex;
+    /* display: flex; */
     margin: 2rem auto 10rem auto;
     text-align: center;
     width: 75vw;
