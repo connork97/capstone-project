@@ -1,5 +1,5 @@
 .offeringsWrapperDiv, .classOfferingsBackground {
-    position: absolute;
+    position: fixed;
     top: 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
 }
 
 .classOfferingsBackground {
-    position: absolute;
+    position: fixed;
     top: -50vh;
     left: -2.5vw;
     height: 250vh;
@@ -22,9 +22,9 @@
 }
 
 .offeringsOverlayDiv, .classOfferingsOverlayDiv {
-    position: absolute;
+    position: fixed;
     width: 100vw;
-    background: rgba(0, 0, 0, 0.35); /* Black with 50% transparency */
+    background: rgba(0, 0, 0, 0.2); /* Black with 50% transparency */
     top: 0;
     z-index: 2;
 }

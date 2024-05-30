@@ -1,21 +1,37 @@
 .signupWrapperDiv {
-    position: absolute;
+    /* position: absolute; */
+    /* margin: auto; */
     /* top: -25vh; */
+    /* top: 0; */
+    /* left: -15vw;
+    /* height: 100vh; */
+    /* height: 200vh; */
+    /* height: 100vh; */
+    /* width: 100vw; */
+    /* background-image: url('../../images/three_new_climbers_long.png'); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */ 
+}
+
+
+.signupBackground {
+    position: fixed;
     top: 0;
+    left: -15vw;
     /* height: 100vh; */
     height: 200vh;
     /* height: 100vh; */
-    width: 100vw;
+    width: 130vw;
     background-image: url('../../images/three_new_climbers_long.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .signupOverlay {
-    position: absolute;
+    position: fixed;
     height: 200vh;
-    width: 100vw;
-    background: rgba(0, 0, 0, 0.25);
+    width: 130vw;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 

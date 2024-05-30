@@ -108,6 +108,7 @@ const EventsCalendar = () => {
   return (
     <div>
       <div className={styles.calendarBackground}></div>
+      <div className={styles.calendarOverlay}></div>
       {Object.keys(clickedSession).length > 0 ? 
       <EventDetailsModal
         clickedSession={clickedSession}

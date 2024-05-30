@@ -1,10 +1,18 @@
 .calendarBackground {
-    position: absolute;
-    background: url('https://mesarim.com/missionvalley/wp-content/uploads/sites/5/2019/02/MVHome-1.jpg');
+    position: fixed;
+    background: url('../../images/happy_jumping_climbers.png');
     background-size: cover;
+    height: 115vh;
+    width: 100vw;
+    top: -15vh;
+}
+
+.calendarOverlay {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
     height: 125vh;
     width: 100vw;
-    top: 0;
 }
 
 .calendarH1 {
@@ -23,8 +31,8 @@
     right: 15vw;
     /* text-align: center; */
     margin: auto;
-    background: rgba(255, 255, 255, 0.85);
-    z-index: 9;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 4;
 }
 
 .rbc-toolbar.rbc-toolbar-label {

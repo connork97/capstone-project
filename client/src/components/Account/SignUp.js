@@ -68,9 +68,10 @@ const SignUp = () => {
     }
 
     return (
+        <>
+        <div className={styles.signupBackground}></div>
+        <div className={styles.signupOverlay}></div>
         <div className={styles.signupWrapperDiv}>
-            <div className={styles.signupOverlay}></div>
-            <div className={styles.backupOverlay}></div>
             <h1 className={styles.signUpPageH1}>Create Account</h1>
             {/* <div className={styles.signupHeaderDiv}> */}
                 {/* <h4>If you already have an account, go back to the login page.</h4> */}
@@ -128,7 +129,7 @@ const SignUp = () => {
                                 placeholder="Phone Number"
                                 required
                                 onChange={handleSignUpInputChange}
-                            >
+                                >
                             </Form.Control>
                         </div>
                         <div className={`${styles.labelInputWrapper} ${styles.emailInput}`}>
@@ -154,7 +155,7 @@ const SignUp = () => {
                             placeholder="Password"
                             required
                             onChange={handleSignUpInputChange}
-                        >
+                            >
                         </Form.Control>
                         <Form.Control
                             className={styles.emailInput}
@@ -164,7 +165,7 @@ const SignUp = () => {
                             placeholder="Confirm Password"
                             required
                             onChange={(event) => setConfirmPassword(event.target.value)}
-                        >
+                            >
                         </Form.Control>
                     </div>
                     <Form.Label className={styles.formLabel}>Address:</Form.Label>
@@ -177,7 +178,7 @@ const SignUp = () => {
                             placeholder="Your Street"
                             required
                             onChange={handleSignUpInputChange}
-                        >
+                            >
                         </Form.Control>
                         <Form.Control
                             className={styles.cityInput}
@@ -187,7 +188,7 @@ const SignUp = () => {
                             placeholder="City"
                             required
                             onChange={handleSignUpInputChange}
-                        >
+                            >
                         </Form.Control>
                         <Form.Control
                             className={styles.stateInput}
@@ -197,7 +198,7 @@ const SignUp = () => {
                             placeholder="State"
                             required
                             onChange={handleSignUpInputChange}
-                        >
+                            >
                         </Form.Control>
                         <Form.Control
                             className={styles.zipcodeInput}
@@ -207,7 +208,7 @@ const SignUp = () => {
                             placeholder="Zip Code"
                             required
                             onChange={handleSignUpInputChange}
-                        >
+                            >
                         </Form.Control>
                     </div>
                     <Form.Label className={styles.formLabel}>Emergency Contact:</Form.Label>
@@ -220,7 +221,7 @@ const SignUp = () => {
                                 required
                                 placeholder="Full Name"
                                 onChange={handleSignUpInputChange}
-                            >
+                                >
                             </Form.Control>
                         </div>
                         <div className={`${styles.labelInputWrapper} ${styles.emergencyPhoneInput}`}>
@@ -232,7 +233,7 @@ const SignUp = () => {
                                 required
                                 placeholder="Phone Number"
                                 onChange={handleSignUpInputChange}
-                            >
+                                >
                             </Form.Control>
                         </div>
                     </div>
@@ -251,6 +252,7 @@ const SignUp = () => {
                 </Form>
             </div>
         </div>
+    </>
     )
 }
 

@@ -1,41 +1,122 @@
 
 
 .mainDiv {
+    margin-top: 15vh;
     position: relative;
     text-align: center;
-    z-index: 10;
+    /* z-index: 5; */
+}
+
+.loginBackground {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    background: url('../../images/man_at_climbing_gym_looking_up_at_wall.png');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    z-index: -1;
+}
+
+.loginOverlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
 }
 
 .loggedInDiv {
     margin-top: 3rem;
+    position: relative;
+    z-index: 9999;
 }
 
 .loggedInH1 {
-    width: 25vw;
+    /* width: 50vw; */
+    position: relative;
+    z-index: 10;
     margin: auto;
-    margin-top: 15vh;
+    margin-top: 30vh;
+    /* margin-top: 15vh; */
+    color: white;
+    font-size: 64px;
     margin-bottom: 5vh;
-
+    text-shadow: 
+        1px 1px 0 black,
+        -1px -1px 0 black,
+        -1px 1px 0 black,
+        1px -1px 0 black,
+        1px 0 0 black,
+        -1px 0 0 black,
+        0 1px 0 black,
+        0 -1px 0 black;
 }
 
 .loggedInH3 {
-    margin: 2rem auto 3rem auto;
+    color: white;
+    font-size: 36px;
+    text-shadow: 
+        1px 1px 0 black,
+        -1px -1px 0 black,
+        -1px 1px 0 black,
+        1px -1px 0 black,
+        1px 0 0 black,
+        -1px 0 0 black,
+        0 1px 0 black,
+        0 -1px 0 black;
 }
 
-.logoutButton {
-    width: 10rem;
-    height: 3rem;
+.accountInfoLink, .accountInfoLink:hover {
+    color: white;
+}
+
+.loginH3 {
+    color: white;
+}
+
+.loginButton, .loginButton:hover {
+    background: rgba(255, 255, 255, 0.85);
+    border: 0.1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    font-size: 24px;
+    padding: 7px 30px;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.logoutButton, .logoutButton:hover {
+    margin-top: 5vh;
+    font-size: 24px;
+    border: none;
+    border-radius: 40px;
+    background:rgba(255, 255, 255, 0.75);
+    color: black;
+    padding: 10px 40px;
 }
 
 .loginDiv {
     margin: auto auto 2rem auto;
-    width: 42.5vw;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 35vw;
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
     border-radius: 25px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2vh;
 }
 
 .loginForm {
+    position: relative;
+    z-index: 10;
     margin: auto;
     width: 95%;
     height: 100%;
+}
+
+.createAccountButton, .createAccountButton:hover {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    margin-top: 5vh;
+    padding: 10px 30px;
+    font-size: 20px;
 }
