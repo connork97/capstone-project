@@ -42,9 +42,25 @@ const Home = () => {
                     <h2 className={styles.welcomeH2}>Let's get you started.</h2>
                     <button className={styles.whatIsPeakSyncButton} onClick={() => scrollToTarget(whatIsPeakSyncRef)}>What is PeakSync?</button>
                     {Object.keys(currentUser).length ?
-                        <button className={styles.accountButton}>Dashboard</button>
+                        <button className={styles.accountButton}>
+                            <Link
+                                to='/admin-dashboard'
+                                exact='true'
+                                className={styles.accountButtonLink}
+                            >
+                                Dashboard
+                            </Link>
+                        </button>
                         :
-                        <button className={styles.accountButton}><Link to='/signup' exact='true' className={styles.accountButtonLink}>Sign Up</Link></button>
+                        <button className={styles.accountButton}>
+                            <Link
+                                to='/signup'
+                                exact='true'
+                                className={styles.accountButtonLink}
+                            >
+                                Sign Up
+                            </Link>
+                        </button>
                     }
                     {/* {loadingText !== "You're ready to go!" && <h2 className={styles.loadedH2}>Please allow the web service to spin up.</h2>}    */}
                     {/* {loadingText !== "You're ready to go!" && <h2 className={styles.loadedH2}>This may take up to one minute.</h2>} */}

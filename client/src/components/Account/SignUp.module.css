@@ -1,18 +1,107 @@
+.signupWrapperDiv {
+    position: absolute;
+    /* top: -25vh; */
+    top: 0;
+    /* height: 100vh; */
+    height: 200vh;
+    /* height: 100vh; */
+    width: 100vw;
+    background-image: url('../../images/three_new_climbers_long.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.signupOverlay {
+    position: absolute;
+    height: 200vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+/* .backupOverlay {
+    position: absolute;
+    top: 100vh;
+    height: 50vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 1;
+} */
+
 .signUpPageH1 {
-    margin-top: 2rem;
+    position: relative;
+    width: 25vw;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    color: white;
+    font-size: 48px;
+    z-index: 10;
 }
 
 .signupHeaderDiv {
-    margin: 2rem auto 3rem auto;
+    margin: auto auto 3rem auto;
     text-align: center;
 }
 
 .signupFormDiv {
+    position: relative;
     margin: auto auto 3rem auto;
-    width: 50vw;
-    height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
+    width: 45vw;
+    color: white;
+    /* padding-top: .5%; */
+    /* height: 100%; */
+    background: rgba(0, 0, 0, 0.5);
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+    border-radius: 15px;
+    z-index: 10;
+}
+
+.multipleInRowDiv {
+    display: flex;
+    margin-top: 1vh;
+    /* width: 100%; */
+}
+
+.labelInputWrapper {
+    display: block;
+}
+
+.nameInput {
+    width: 15.365vw;
+}
+
+.firstNameInput, .lastNameInput, .dateOfBirthInput {
+    position: absolute;
+}
+
+.lastNameInput {
+    margin-left: 16.365vw;
+}
+
+.dateOfBirthInput {
+    width: 10vw;
+    margin-left: 32.75vw;
+}
+
+.phoneNumberInput, .emailInput {
+    width: 21vw;
+}
+
+.emailInput, .emergencyPhoneInput, .cityInput, .stateInput, .zipcodeInput {
+    margin-left: 1vw;
+}
+
+.emergencyNameInput {
+    width: 26vw;
+}
+
+.emergencyPhoneInput {
+    width: 16vw;
+}
+
+.streetAddress, .city {
+    width: 20vw;
 }
 
 .signupForm {
@@ -26,8 +115,23 @@
 
 .formLabel {
     margin-right: 1rem;
+    margin-top: 15px;
 }
 
-.formCheck {
+.waiverFormLabel, .waiverFormCheck {
+    margin-top: 2vh;
+}
+
+.waiverFormCheck {
+    margin-left: 1vw;
     scale: 1.5;
+}
+
+.signupSubmitButton {
+    margin: 1vh auto 2vh auto;
+    padding: 10px 50px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: 24px;
 }
