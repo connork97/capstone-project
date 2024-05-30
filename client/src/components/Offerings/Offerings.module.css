@@ -91,7 +91,7 @@
 
 .classOfferingsWrapper {
     position: relative;
-    z-index: 5;
+    z-index: 10;
     margin: auto;
     text-align: center;
 }
