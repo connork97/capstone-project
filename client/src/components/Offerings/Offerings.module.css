@@ -1,3 +1,24 @@
+.offeringsWrapperDiv {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://mesarim.com/missionvalley/wp-content/uploads/sites/5/2019/02/MVHome-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.offeringsOverlayDiv {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.4); /* Black with 50% transparency */
+    top: 0;
+    z-index: 2;
+
+}
+
 .calendarRedirectButton {
     margin: 20px 25px;
 }
@@ -14,7 +35,12 @@
 }
 
 .offeringsH1 {
-    margin-top: 2rem;
+    position: relative;
+    margin: auto;
+    margin-top: 15vh;
+    color: white;
+    width: 40vw;
+    z-index: 9999;
 }
 
 .classOfferingsDiv {
@@ -25,5 +51,7 @@
 }
 
 .membershipOfferingsDiv {
-    margin: 2rem auto 10rem auto;
+    position: relative;
+    margin: 3rem auto auto auto;
+    z-index: 10;
 }

@@ -69,7 +69,7 @@ const Login = () => {
     }
 
     return (
-        <div className="mainDiv">
+        <div className={styles.mainDiv}>
             {Object.keys(currentUser).length > 0 ?
             <div className='loggedInDiv'>
                 <h1>Hi {currentUser.first_name}, thanks for logging in!</h1>

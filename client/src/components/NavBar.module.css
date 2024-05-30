@@ -1,73 +1,144 @@
+.component {
+    /* Your component styles */
+}
+
+#navBar {
+    /* transition: top 0.3s; */
+}
+
 .navBarDiv {
     /* flex: 1; */
+    transition: transform 0.3s ease-out;
+    position: fixed;
+    z-index: 5;
     display: flex;
-    width: 75%;
+    width: 100%;
     margin: auto;
-    margin-top: 1%;
-    margin-bottom: 2.5%;
+    margin-top: 0%;
+    margin-bottom: -12.5%;
+    top: 0;
+    transition: top 1s;
+
     /* justify-content: space-evenly; */
+    /* background: linear-gradient(to bottom,  */
+    /* rgba(0, 0, 0, 0.6) 0%,   */
+    /* rgba(0, 0, 0, 0.4) 50%,    */
+    /* rgba(0, 0, 0, 0.6) 100%);       */
+    height: 35vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 80%);
+    
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
 }
 
+.navBarDiv.up {
+    transform: translateY(-500px);
+}
 .navWrap {
     align-items: center;
     justify-content: space-evenly;
-    margin-right: 20px;
+    margin: auto;
+    /* margin-top: 2.25vh; */
+    top: 2.25vh;
+    /* justify-self: center; */
+    position: absolute;
+    right: 50px;
+    /* margin-right: 18.25vw; */
+    /* width: 30vw; */
     display: flex;
 }
 
-.navBarLink, .navBarLinkActive {
+.peakSyncLogoNavLink, .peakSyncLogoNavLink:hover {
+    margin-left: 14vw;
+    /* margin-top: -11.25%; */
+    position: absolute;
+    top: 2.25vh;
+    /* font-weight: bold !important; */
+    color: white;
+}
+
+.navBarLink, .navBarLinkActive, .navbarLink:hover {
     height: 50px;
-    font-family: 'Arial Narrow Bold', sans-serif;
+    /* font-family: 'Arial Narrow Bold', sans-serif; */
     text-decoration: none !important;
-    color: black;
-    font-size: 1.9rem;
+    color: white !important;
+    font-size: 1.7rem;
+    font-weight: lighter;
     padding: 0 1rem;
 }
 
-.navBarLink:hover {
-    color: black;
-}
-
-.navBarLinkActive:hover {
+.navBarLinkActive, .navBarLinkActive:hover {
     color: white;
-}
-
-.navBarLinkActive {
-    color: white;
+    font-weight: lighter;
     margin-top: -0.25rem;
-    background: black;
-    border-radius: 5px;
+    /* background: rgba(0, 0, 0, 0.35); */
+    border: 1px solid white;
+    padding: 3px 50px;
+    /* padding-left: 25px; */
+    /* padding-right: 25px; */
+    border-radius: 30px;
 }
 
 .dropdownToggle {
-    background: white !important;
-    color: black !important;
+    background: transparent !important;
+    /* color: black !important; */
     border: none;
     text-decoration: none;
     margin: -6px 30px auto 30px;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
+    font-weight: lighter;
 }
 
 .dropdownToggle:hover {
-    background: white !important;
-    color: black !important;
+    background: transparent;
+    /* color: black !important; */
     border: none;
     text-decoration: none;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
 }
 
 .dropdownMenu {
-    color: black;
-    width: 100%;
+    /* background: linear-gradient(to bottom,  */
+    /* rgba(0, 0, 0, 0.6) 0%,  Least transparent at the top */
+    /* rgba(0, 0, 0, 0.4) 50%,   Most transparent in the middle */
+    /* rgba(0, 0, 0, 0.6) 100%); Least transparent at the bottom     */ 
+    position: relative;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.35);
+    color: white;
+    border: none;
+    width: 57.5%;
+    margin-left: 17%;
     text-align: right;
 }
 
 .dropdownLink {
-    color: black;
+    position: relative;
+    z-index: 99;
+    color: white;
+    font-weight: lighter;
     text-decoration: none;
     font-size: 1.5rem;
     text-align: left !important;
+}
+
+.dropdownLink:hover {
+    color: white;
+}
+
+.dropdownMenu.dropdownLink {
+    position: relative;
+    z-index: 99;
+    background: transparent !important;
+}
+
+
+.dropdownMenu.dropdownLink:hover {
+    background: transparent !important;
+}
+
+.dropdownItem:hover {
+    background: transparent;
+    color: white;
 }

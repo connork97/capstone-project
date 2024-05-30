@@ -1,0 +1,23 @@
+.calendarH1 {
+    position: relative;
+    margin: 15vh auto 2.5vh auto;
+    width: 40vw;
+    z-index: 10;
+}
+
+.eventsCalendar, .rbc-calendar {
+    position: absolute;
+    height: 85vh;
+    width: 85vw;
+    right: 7.5vw;
+    /* text-align: center; */
+    margin: auto;
+    background: rgba(255, 255, 255, 0.25);
+    z-index: 9;
+}
+
+.rbc-toolbar.rbc-toolbar-label {
+    /* position: absolute; */
+    /* right: 50px !important; */
+    padding-left: 25px !important;
+}

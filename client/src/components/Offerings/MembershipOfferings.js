@@ -34,14 +34,16 @@ const MembershipOfferings = () => {
     })
     return (
         <>
-        <h1 className={styles.offeringsH1}>Memberships and More!</h1>
-        <div className={styles.membershipOfferingsDiv}>
-            <div className="offeringsDiv">
-                <Accordion className={styles.accordion}>
-                    {renderAllMemberships}
-                </Accordion>
+        <div className={styles.offeringsOverlayDiv}></div>
+        <div className={styles.offeringsWrapperDiv}></div>
+            <h1 className={styles.offeringsH1}>Memberships and More!</h1>
+            <div className={styles.membershipOfferingsDiv}>
+                <div className="offeringsDiv">
+                    <Accordion className={styles.accordion}>
+                        {renderAllMemberships}
+                    </Accordion>
+                </div>
             </div>
-        </div>
         </>
     )
 }

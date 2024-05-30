@@ -1,3 +1,5 @@
+import styles from './EventsCalendar.module.css';
+
 import React, { useEffect, useState, useContext } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
@@ -125,14 +127,15 @@ const EventsCalendar = () => {
         setShowAdminModal={setShowAdminModal}
       />
       : null}
-      <h1>Calendar Page</h1>
+      <h1 className={styles.calendarH1}>Calendar</h1>
         <Calendar
           localizer={localizer}
           defaultDate={new Date()}
           defaultView="month"
           events={events}
           timeslots={1}
-          style={{ height: "85vh", width:"85vw", margin:"auto" }}
+          className={styles.eventsCalendar}
+          // style={{ height: "85vh", width:"85vw", margin:"auto" }}
           eventPropGetter={eventStyleGetter}
           selectable
           onSelectEvent={handleClickedEvent}
